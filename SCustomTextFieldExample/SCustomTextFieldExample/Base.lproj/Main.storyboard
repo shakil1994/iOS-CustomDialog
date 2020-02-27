@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SCustomTextFieldExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wNX-h5-MDS" customClass="MDCTextField">
+                                <rect key="frame" x="20" y="74" width="374" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="slN-pt-CYE" customClass="MDCTextField">
+                                <rect key="frame" x="20" y="118" width="374" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9tR-ph-Ge2" customClass="MDCTextField">
+                                <rect key="frame" x="20" y="162" width="374" height="34"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="slN-pt-CYE" secondAttribute="trailing" constant="20" id="407-T8-7wB"/>
+                            <constraint firstItem="slN-pt-CYE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Dx-3r-FHb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wNX-h5-MDS" secondAttribute="trailing" constant="20" id="8Lt-15-nab"/>
+                            <constraint firstItem="9tR-ph-Ge2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MSY-Rz-iNb"/>
+                            <constraint firstItem="9tR-ph-Ge2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QOB-a2-VGZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9tR-ph-Ge2" secondAttribute="trailing" constant="20" id="TMV-7E-Lb6"/>
+                            <constraint firstItem="slN-pt-CYE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vcb-4S-0sQ"/>
+                            <constraint firstItem="wNX-h5-MDS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Vcn-6O-TYk"/>
+                            <constraint firstItem="9tR-ph-Ge2" firstAttribute="top" secondItem="slN-pt-CYE" secondAttribute="bottom" constant="10" id="prz-pP-m3O"/>
+                            <constraint firstItem="slN-pt-CYE" firstAttribute="top" secondItem="wNX-h5-MDS" secondAttribute="bottom" constant="10" id="uIX-XV-Pjq"/>
+                            <constraint firstItem="wNX-h5-MDS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vSc-cQ-zu3"/>
+                            <constraint firstItem="wNX-h5-MDS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="xcN-BH-5nV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="txtEmail" destination="slN-pt-CYE" id="Jls-ww-na8"/>
+                        <outlet property="txtPassword" destination="9tR-ph-Ge2" id="ALF-J0-XhD"/>
+                        <outlet property="txtUserName" destination="wNX-h5-MDS" id="PLY-y6-XRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64" y="139"/>
+        </scene>
+    </scenes>
+</document>
